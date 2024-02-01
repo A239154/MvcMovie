@@ -1,0 +1,35 @@
+AFFAN SHAIKH
+0847969
+1227
+ 
+ In this lab i performed from part4 to part 9 
+	Data Model:
+		Movie class added in Models folder.
+		Represents movie data for the database.
+		Properties: Id, Title, ReleaseDate, Genre, Price.
+		Uses Entity Framework Core (EF Core).
+
+	NuGet Packages:
+			EF Core packages auto-installed in Visual Studio.
+
+	Scaffold Movie Pages:
+			Scaffolded CRUD pages for Movie model.
+			Generates MovieController, Razor views.
+			Configures NuGet packages, context, and connection string.
+
+	Initial Migration:
+			EF Core Migrations for database creation.
+			Commands: Add-Migration, Update-Database.
+			Test app for possible login failure.
+
+	Generated Files and Code:
+			MvcMovieContext class, DI in controller.
+			Connection string in appsettings.json.
+
+	Testing the App:
+			Build, run, and check Movie App link.
+
+	Views and Controllers:
+		Emphasizes strongly typed models in views.
+		@model directive for compile-time checking.
+		Examples: Details and Index views.
