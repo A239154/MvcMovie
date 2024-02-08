@@ -1,21 +1,44 @@
 AFFAN SHAIKH
 0847969
-1227
-02/01/2024
+1202
+08/02/2024
  
- step - 5
+ step - 6
 Integrating search allows users to efficiently locate specific information within a dataset. The controller's index action,
 augmented with a conditional query based on the search parameter, enables dynamic filtering of records. The associated view incorporates 
 a user-friendly search form, providing a seamless and intuitive experience for users to interact with and retrieve relevant data.
 
-step - 6
+step - 7
 The introduction of a new field through database migration and model validation expands the data model's capabilities.
 The model-level validation ensures that the new field adheres to predefined criteria, such as presence and maximum length, 
 safeguarding data consistency. The update to the view, particularly the form template, accommodates the new field, enabling users to input
 and manipulate the additional data seamlessly.
 
-step - 7
+step - 8
 Validation in the model and controller safeguards the integrity of the application's data.
 By imposing rules on the allowed content and structure of data, validation prevents erroneous or incomplete entries.
 In the controller, handling validation errors gracefully by rendering the appropriate view ensures a smooth user experience,
 guiding users to correct any input issues.
+
+step - 9
+ Added the validation rule in the movie model.
+ Required: Ensures that a property must have a non-null value.
+StringLength: Specifies the minimum and maximum length constraints for a string property.
+RegularExpression: Validates whether a property value matches a specified regular expression pattern.
+Range: Validates whether a numeric property value falls within a specified range.
+DataType: Specifies the data type of a property and can also assist with formatting, although it does not provide validation.
+I run the app and got the validation error ui as mentioned in the asp.net website.
+Automatic Display: Validation error messages are automatically shown within form fields, enforced both client-side and server-side.
+No Code Modifications: Validation rules defined in the model are seamlessly applied by controllers and views without manual code changes.
+Consistent Validation: Rules are uniformly enforced across actions, ensuring a consistent user experience.
+Dual Validation Approach: Validation occurs both client-side (for immediate feedback) and server-side (for security).
+Controlled Form Submission: Data is submitted only after resolving client-side validation errors, enhancing data integrity.
+Verification Options: Developers can verify validation behavior using breakpoints, Fiddler, or browser tools.
+
+Part 10
+	opened the movie controller and examined the details method.
+	The information stresses the importance of understanding HTTP request formats and implementing robust security measures, such as null checks, to safeguard ASP.NET MVC applications. Specifically:
+	HTTP Requests: MVC scaffolding comments illustrate HTTP request formats, including controller, method, and identifier segments from routing configuration.
+	Data Retrieval Security: Entity Framework's FirstOrDefaultAsync method includes a security feature ensuring validation of retrieved data, enhancing application security.
+	Delete Method Security: Delete methods are scrutinized for security, highlighting null reference handling to prevent exceptions and secure against malicious URL manipulation.
+
