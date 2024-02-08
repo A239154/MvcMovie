@@ -32,6 +32,7 @@ public static class SeedData
                 Title = "Ghostbusters ",
                 ReleaseDate = DateTime.Parse("1984-3-13"),
                 Genre = "Comedy",
+                Rating = "R",
                 Price = 8.99M
             },
             new Movie
@@ -39,6 +40,7 @@ public static class SeedData
                 Title = "Ghostbusters 2",
                 ReleaseDate = DateTime.Parse("1986-2-23"),
                 Genre = "Comedy",
+                Rating = "R",
                 Price = 9.99M
             },
             new Movie
@@ -46,6 +48,7 @@ public static class SeedData
                 Title = "Rio Bravo",
                 ReleaseDate = DateTime.Parse("1959-4-15"),
                 Genre = "Western",
+                Rating = "R",
                 Price = 3.99M
             }
         );

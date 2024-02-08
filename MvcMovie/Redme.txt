@@ -1,35 +1,21 @@
 AFFAN SHAIKH
 0847969
 1227
+02/01/2024
  
- In this lab i performed from part4 to part 9 
-	Data Model:
-		Movie class added in Models folder.
-		Represents movie data for the database.
-		Properties: Id, Title, ReleaseDate, Genre, Price.
-		Uses Entity Framework Core (EF Core).
+ step - 5
+Integrating search allows users to efficiently locate specific information within a dataset. The controller's index action,
+augmented with a conditional query based on the search parameter, enables dynamic filtering of records. The associated view incorporates 
+a user-friendly search form, providing a seamless and intuitive experience for users to interact with and retrieve relevant data.
 
-	NuGet Packages:
-			EF Core packages auto-installed in Visual Studio.
+step - 6
+The introduction of a new field through database migration and model validation expands the data model's capabilities.
+The model-level validation ensures that the new field adheres to predefined criteria, such as presence and maximum length, 
+safeguarding data consistency. The update to the view, particularly the form template, accommodates the new field, enabling users to input
+and manipulate the additional data seamlessly.
 
-	Scaffold Movie Pages:
-			Scaffolded CRUD pages for Movie model.
-			Generates MovieController, Razor views.
-			Configures NuGet packages, context, and connection string.
-
-	Initial Migration:
-			EF Core Migrations for database creation.
-			Commands: Add-Migration, Update-Database.
-			Test app for possible login failure.
-
-	Generated Files and Code:
-			MvcMovieContext class, DI in controller.
-			Connection string in appsettings.json.
-
-	Testing the App:
-			Build, run, and check Movie App link.
-
-	Views and Controllers:
-		Emphasizes strongly typed models in views.
-		@model directive for compile-time checking.
-		Examples: Details and Index views.
+step - 7
+Validation in the model and controller safeguards the integrity of the application's data.
+By imposing rules on the allowed content and structure of data, validation prevents erroneous or incomplete entries.
+In the controller, handling validation errors gracefully by rendering the appropriate view ensures a smooth user experience,
+guiding users to correct any input issues.
